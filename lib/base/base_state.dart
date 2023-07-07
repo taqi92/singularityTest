@@ -42,10 +42,10 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
   Text? _getTitle(String? title, bool isTranslatable) {
     if (title != null && title != "") {
       var textStyle = GoogleFonts.getFont(
-        latoFont,
+        primaryFont,
         // lineWight
         fontWeight: boldFontWeight,
-        color: kFilterTitleColor,
+        color: kWhiteColor,
         fontSize: titleFontSize,
       );
 
@@ -73,14 +73,14 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
       List<Widget>? actions}) {
     return AppBar(
       elevation: isNavigate ? 1.4 : 1,
-      iconTheme: const IconThemeData(color: Colors.white),
+      iconTheme: const IconThemeData(color: kPrimaryColor),
       centerTitle: isCenterTitle,
       systemOverlayStyle: SystemUiOverlayStyle.dark.copyWith(
         statusBarColor: Colors.white,
           statusBarBrightness: Brightness.light// optional
       ),
       title: _getTitle(title, isTranslatable),
-      backgroundColor: Colors.white,
+      backgroundColor: kPrimaryColor,
       shadowColor: Colors.grey.withOpacity(0.15),
       leading: isNavigate
           ? GestureDetector(
@@ -101,7 +101,7 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
                     child: Center(
                       child: Icon(
                         Icons.arrow_back_ios_sharp,
-                        color: kTextColor,
+                        color: kWhiteColor,
                         size: 16.0,
                       ),
                     ),

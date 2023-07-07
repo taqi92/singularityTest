@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 /*font start*/
-const latoFont = 'Lato';
+const primaryFont = 'Hind Siliguri';
 const boldFontWeight = FontWeight.w700;
 const titleFontWeight = FontWeight.w600;
 const mediumFontWeight = FontWeight.w500;
@@ -21,7 +21,7 @@ const appBarFontSize = 18.0;
 const subTitleFontSize = 18.0;
 const textSmallFontSize = 16.0;
 const buttonTextFontSize = 18.0;
-const noDataFoundRegularFontSize = 14.0;
+const regularFontSize = 14.0;
 const smallerFontSize = 12.0;
 const smallestFontSize = 11.0;
 const messageNotifyFontSize = 9.0;
@@ -43,9 +43,11 @@ const k20LineHight = 20.0;
 const k19LineHeight = 10.0;
 const k18LineHeight = 36.0;
 
+const kFontRadius = 8.0;
+
 /*Colors*/
 
-const kPrimaryColor = Color(0xFF06164F);
+const kPrimaryColor = Color(0xFF0572B2);
 const kPrimaryLightColor = Color(0xFFFAFAFA);
 const kPreliminaryColor = Color(0xFF0B695E);
 const kTextColor = Color(0xFF000000);

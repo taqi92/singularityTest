@@ -32,7 +32,7 @@ class TextComponent extends StatelessWidget {
     this.maxLines,
     this.opacity = 1,
     this.textOverflow,
-    this.font = latoFont,
+    this.font = primaryFont,
     this.isTranslatable = true,
     this.isHideKeyboard = true,
     this.color = kTextColor,

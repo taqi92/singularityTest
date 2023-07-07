@@ -27,15 +27,6 @@ abstract class BaseStateless {
         onTap: () {
           Get.back();
 
-          // if(backToCustomerHome) {
-          //   Get.offAll(() => const HomeCustomerScreen(), transition: backTransition);
-          // } else if(backToProviderHome) {
-          //   Get.offAll(() => const HomeServiceProviderScreen(), transition: backTransition);
-          // }  else if(backToOrderDetails) {
-          //   Get.close(3);
-          // } else {
-          //   Get.back();
-          // }
         },
         child: const Padding(
           padding: EdgeInsets.all(8.0),
@@ -52,7 +43,7 @@ abstract class BaseStateless {
   Text? _getTitle(String? title, bool isTranslatable) {
     if(title != null && title != "") {
       var textStyle = GoogleFonts.getFont(
-        latoFont,
+        primaryFont,
         fontWeight: mediumFontWeight,
         color: kPrimaryColor,
         fontSize: appBarFontSize,

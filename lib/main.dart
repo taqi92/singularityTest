@@ -5,6 +5,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:reprecinct/utils/style.dart';
 import 'package:reprecinct/view/post_attendance_page.dart';
+import 'package:reprecinct/view/splash_screen.dart';
 import 'package:reprecinct/view/stores_page.dart';
 
 
@@ -53,7 +54,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const PostAttendancePage(),
+      home: const SplashScreen(),
     );
   }
 }
