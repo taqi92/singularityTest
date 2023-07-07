@@ -34,10 +34,10 @@ class _StoresPageState extends BaseState<StoresPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: myAppBar(
-          title: "Referral Programs",
+          title: "referral_program",
           isNavigate: false,
           isCenterTitle: true,
-          isTranslatable: false),
+          isTranslatable: true),
       body: GetBuilder<CommonController>(
         builder: (controller) {
           return Padding(

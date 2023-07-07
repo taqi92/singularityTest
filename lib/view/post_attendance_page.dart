@@ -33,7 +33,7 @@ class _PostAttendancePageState extends BaseState<PostAttendancePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myAppBar(title: "Post Attendance"),
+      appBar: myAppBar(title: "post_attendance"),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -41,23 +41,23 @@ class _PostAttendancePageState extends BaseState<PostAttendancePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextComponent(
-                "Name",
+                "name",
                 fontWeight: titleFontWeight,
                 padding: EdgeInsets.only(bottom: 8.0),
               ),
               TextFormFieldComponent(
-                hint: "Please enter Name",
+                hint: "enter_name",
                 floatingLabelBehavior: FloatingLabelBehavior.always,
                 onChanged: (String? val) {
                   _commonController.nameObs.value = val;
                 },
                 padding: EdgeInsets.zero,
               ),
-              TextComponent("UID",
+              TextComponent("uid",
                   fontWeight: titleFontWeight,
                   padding: EdgeInsets.only(bottom: 8.0, top: 16.0)),
               TextFormFieldComponent(
-                  hint: "Please enter UID",
+                  hint: "enter_id",
                   textInputType: TextInputType.number,
                   floatingLabelBehavior: FloatingLabelBehavior.always,
                   onChanged: (String? val) {
@@ -73,7 +73,7 @@ class _PostAttendancePageState extends BaseState<PostAttendancePage> {
         onPressed: () {
           _commonController.postAttendance();
         },
-        text: "Submit",
+        text: "submit",
       ),
     );
   }
